@@ -1,0 +1,91 @@
+.heading{
+    width: 100%;
+    
+}
+.heading h3{
+    display: inline;
+}
+.nav {
+    text-align: center;
+}
+
+
+body{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+}
+#instructions_nav_btn{
+    float: right;
+}
+
+#home{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#home h2{
+    margin: 10px;
+    color: white;
+}
+
+#home img{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#about{
+    background-color: red;
+    
+}
+#about h2 {
+    font-size: medium;
+    max-width: 900px;
+    color: white;
+}
+
+#about_heading{
+    color: white;
+    margin-top: 20px;
+}
+
+#playgame{
+    background-color: #E9F89D;
+    
+    
+}
+.modal-dialog{
+    width: 70%;
+    margin-top: 60px;
+
+}
+.instruc_img{
+
+    width: 40%;
+    display: inline-block;
+}
+
+.footer{
+    
+    margin-bottom: 0;
+    padding: 3px;
+    width:100%;
+    line-height: 3;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.footer a{
+    color: red;
+}
+
+video{
+    background: url("console\ bg.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 100px;
+}

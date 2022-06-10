@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <title>Legendary Mario</title>
+    <link rel="icon" type="image/x-icon" href="mario favicon1.png">
+    <!-- link p5.js and its addons like p5.dom.js or p5.sound.js -->
+    <script src="lib/p5.min.js" type="text/javascript"></script>
+    <!-- link p5.play.js -->
+    <script src="lib/p5.play.js" type="text/javascript"></script>
+    <!-- link p5.dom.js -->
+    <script src="lib/p5.dom.js" type="text/javascript"></script>
+
+    <!-- link your javascript sketch -->
+    <script src="scripts/sprites.js" type="text/javascript"></script>
+
+    <script src="main.js" type="text/javascript"></script>
+
+    <script src="characters_environment.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+  </head>
+  <body >
+    <nav class="navbar-inverse" style="position:sticky; top:0; z-index: 99999;">
+
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigator" >  
+
+      </button>
+      <a class="navbar-brand" > Legendary Mario </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navigator">
+      
+      <ul class="nav navbar-nav">  
+        <li >  <a href="#home"> HOME </a> </li>
+        <li >  <a href="#playgame"> PLAY GAME </a> </li>
+        <li >  <a href="#about"> ABOUT </a> </li>
+        <li><a data-toggle="modal" data-target="#mymodal"> INSTRUCTIONS</a>  </li>
+        
+      </ul>
+    
+     </div>
+    
+    </nav>
+
+<center>
+
+  <div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal"> &times; </button>
+          <h1> INSTRUCTIONS </h1>
+        </div>
+        <div class="modal-body">
+          <img  class="instruc_img" src="jump.png">
+          <img  class="instruc_img" src="right.png">
+          <img  class="instruc_img" src="left.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section id="home">
+    <img src="mario.png">
+    <h2> " If You Can Dream It , You Can Do It "</h2>
+    <br>
+    <h2> WELCOME TO THE WORLD OF MARIO </h2>
+    <br><br>
+    
+  </section>
+
+ <section id="playgame">
+  <br><br>
+  <button onclick="startgame()"  class="btn btn-success" id="start_btn"> START </button>
+  <br>
+  <h2 class="btn btn-warning" id="status"> </h2>
+  <br><br>
+  <div id="canvas_div"></div>
+  <div id="game_console_div"></div>
+  <br><br><br>
+</section>
+
+<section id="about">
+
+  <h1 id="about_heading"> About Legendary Mario Game</h1>
+  <br>
+  <h2> Mario is a character created by Japanese video game designer Shigeru Miyamoto. He is the title character of the Mario franchise and the mascot of Japanese video game company Nintendo. Mario has appeared in over 200 video games since his creation. Depicted as a short, pudgy, Italian plumber who resides in the Mushroom Kingdom, his adventures generally center on rescuing Princess Peach from the Koopa villain Bowser. Mario has access to a variety of power-ups that give him different abilities. Mario's fraternal twin brother is Luigi.
+
+    Mario first appeared as the player character of Donkey Kong (1981), a platform game. Miyamoto wanted to use Popeye as the protagonist, but when he could not achieve the licensing rights, he created Mario instead. Miyamoto expected the character to be unpopular and planned to use him for cameo appearances; originally called "Mr. Video", he was renamed to Mario after Mario Segale. Mario's clothing and characteristics were themed after the setting of Donkey Kong. He then began to star in the Super Mario series of platform games, beginning with the critically acclaimed Super Mario Bros. in 1985. Since 1992, Mario has been voiced by Charles Martinet.
+    
+    After Super Mario Bros., Mario began to branch off to different genres. These include puzzle games such as Dr. Mario, role-playing games such as Paper Mario and Mario & Luigi, and sports games such as Mario Kart and Mario Tennis. He has appeared in other Nintendo properties, such as in the Super Smash Bros. series of crossover fighting games. Mario has also appeared in various animations, including three series produced by DIC Entertainment (voiced by Lou Albano and later Walker Boone), and was portrayed by Bob Hoskins in the 1993 Super Mario Bros. film. He will be voiced by Chris Pratt in the upcoming 2023 film adaptation.
+    
+    Mario is near-unanimously considered to be the most famous character in the video game industry and an established pop culture icon. Mario's likeness has appeared in a variety of merchandise, such as clothing and collectible items, and people and places have been nicknamed after him. He has also inspired a considerable amount of unofficial media. With more than 750 million units sold worldwide, the overall Mario franchise is the bestselling video game franchise of all time.</h2>
+    <br>
+    
+</section>
+
+</center>
+
+<div class="footer">
+  <h3> Source code credit <a href="https://github.com/linuk"> Linuk</a> || Game Credit <a href="https://supermariorun.com/en-gb/index.html"> Mario </a></h3>
+</div>
+
+  </body>
+</html>
